@@ -1,0 +1,436 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+     background-color:rgb(0, 0, 0);   margin: 0; padding: 0;
+    
+  }
+  
+
+
+  nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    border: 0px;
+    padding: 0px;
+     background: linear-gradient(180deg, #121111 0%, rgba(18, 17, 17, 0) 100%);
+     margin: 0%;
+     z-index: 1000;
+     display: flex;
+     justify-content: space-around;
+     flex-grow: 1;
+     align-items: center;
+     margin: 0;
+     
+    
+     
+}
+
+nav ul{
+    align-items: center;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li a{
+    color: white;
+    /* font-size: 1.5vw; */
+    font-weight: 500;
+    text-decoration: none;
+    align-items: center;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+nav{
+    justify-content: flex-end;
+}
+
+.nav-line{
+    position: absolute;
+
+    left : 0px;
+    margin-left: 0px;
+    background-color: #00EFE1;
+    width: 0;
+    height: 1px;
+    align-items: center;
+    animation: expandWidth 1.5s ease-in-out 1s forwards;
+    
+    
+}
+
+
+@keyframes expandWidth {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+ 
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    /* width: 100px; */
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.292);
+    box-shadow: -10px 0 10px rgb(0, 0, 0,.1);
+    display: none;
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 0;
+    
+
+    
+}
+.menu{
+    display: none;
+}
+
+.nav-linecc{
+
+    width: 100%; 
+    color: white; 
+    display: flex; 
+    justify-content: center; 
+    margin-left: 10px;
+    display: none;
+}
+
+.sidebar li{
+    width: 100%;
+    padding-top:20px ;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.sidebar a{
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+
+   
+}
+
+
+
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-items: center;
+    width: 100%;
+    justify-content: center;
+    
+}
+.icons a{
+    display: flex;
+    justify-content: center;
+}
+
+
+.textlogoresp{
+    display: none;
+}
+
+
+
+.logobox{
+    width: 100%;
+    background: url(/images/mainimg.png);
+    background-size: 1300px 450px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 450px;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.logobox .logo{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top:25%;
+   
+}
+
+
+
+.logobox .logo .textlogo{
+
+   
+   height: auto;
+   justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    width: 40%;
+    padding-left: 10%;
+
+}
+.logobox .logo .cclogo{
+
+    height: auto;
+   justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: row;
+
+
+
+}
+
+
+
+.textlogo{
+    /* flex-grow: 1; */
+    font-size: 1.5vw;
+    color: white;
+    position: relative;
+    left: 50px;
+   
+
+}
+
+.text{
+    
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    height: max-content;
+    background: linear-gradient(180deg, #0e857dbe 0%, rgba(190.81, 114.96, 114.96, 0) 100% );
+    
+}
+
+
+.sec2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.txt{
+    width: 50%;
+    padding: 20px;
+    justify-content: left;
+}
+.txt h4{
+    color: rgb(255, 255, 255);
+    font-size: 1.7vw;
+    font-weight: 100;
+    
+}
+
+.txt h5{
+    color: white;
+    font-weight: 100;
+    font-size: 1.6vw;
+}
+
+.agenda-section{
+    width: 100%;
+}
+.sec3{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+
+.agen{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 15%; background: linear-gradient(270deg, #006B64 0%, rgba(0, 0, 0, 0) 100%, rgba(217, 217, 217, 0) 100%);
+
+}
+
+.agen h1{
+color: white; font-size: 2.2vw;  font-weight: 100;
+}
+
+
+
+
+.img{
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.479);
+    margin-top: 5px;
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.527);
+
+    text-align: center;
+
+}
+
+.img img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+.agenda-section{
+     display: flex; flex-wrap: wrap; flex-direction:row; }
+
+
+ .agenda-section .sec3 .halflogo{
+    width: 40%;  height: auto; display: block; }
+
+    .agenda-section .sec3 .txt{
+        padding: 10px 0 10px 10px;
+    }
+
+
+@media (max-width : 800px){
+    .hide{
+        display: none;
+    }
+
+    .nav-line{
+        display: none;
+    }
+   .menu{
+    display: block;
+    margin: 0 10px;
+   }
+
+   .nav-linecc{
+    display: block;
+}
+
+.logobox .logo{
+    justify-content: center;
+}
+
+
+    .logobox .logo .textlogo{
+       
+           display: none;
+    }
+
+    .logobox .logo .textlogoresp{
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+       
+        align-items: center;
+        /* position: relative;
+        top: 40px; */
+    }
+
+   
+
+    .text .sec2 .txt h4{
+
+        font-size: 15px;
+      
+    }
+
+    .text .sec2 .txt{
+        width: 90%;
+    }
+
+    .text .sec2 .img{
+        width: 90%;
+        
+    }
+
+    .sec3{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    .agenda-section .sec3 .halflogo{
+        width: 90%;
+    }
+    .agenda-section .sec3 .txt{
+        padding: 10px 0 10px 10px;
+        width: 100%;
+    }
+
+    .agenda-section .sec3 .txt .agen{
+
+        height: 50px;
+      
+
+    }
+
+    .agenda-section .sec3 .txt .agen h1{
+
+        font-size: 25px;
+         
+    }
+
+    .agenda-section .sec3 .txt h5 ul li {
+
+        font-size: 15px;
+       
+    }
+    .logobox .logo .textlogoresp{
+        font-size: 8px;
+    }
+
+
+
+}
+
+@media(max-width:400px)
+{
+    .sidebar{
+        width: 50%;
+    }
+
+    .logobox .logo .textlogoresp{
+        font-size: 8px;
+    }
+
+
+    .logobox .logo .cclogo{
+        left: 20%;
+    }
+
+    
+}
