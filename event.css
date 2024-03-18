@@ -1,0 +1,388 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+ 
+
+
+
+  nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    border: 0px;
+    padding: 0px;
+     background: linear-gradient(180deg, #121111 0%, rgba(18, 17, 17, 0) 100%);
+     margin: 0%;
+     z-index: 1000;
+     display: flex;
+     justify-content: space-around;
+     flex-grow: 1;
+     align-items: center;
+     margin: 0;
+     
+    
+     
+}
+
+nav ul{
+    align-items: center;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li a{
+    color: white;
+    /* font-size: 1.5vw; */
+    font-weight: 500;
+    text-decoration: none;
+    align-items: center;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+nav{
+    justify-content: flex-end;
+}
+
+.nav-line{
+    position: absolute;
+
+    left : 0px;
+    margin-left: 0px;
+    background-color: #00EFE1;
+    width: 0;
+    height: 1px;
+    align-items: center;
+    animation: expandWidth 1.5s ease-in-out 1s forwards;
+    
+    
+}
+
+
+@keyframes expandWidth {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+ 
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    /* width: 100px; */
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.292);
+    box-shadow: -10px 0 10px rgb(0, 0, 0,.1);
+    display: none;
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 0;
+    
+
+    
+}
+.menu{
+    display: none;
+}
+
+.nav-linecc{
+
+    width: 100%; 
+    color: white; 
+    display: flex; 
+    justify-content: center; 
+    margin-left: 10px;
+    display: none;
+}
+
+.sidebar li{
+    width: 100%;
+    padding-top:20px ;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.sidebar a{
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+
+   
+}
+
+
+
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-items: center;
+    width: 100%;
+    justify-content: center;
+    
+}
+.icons a{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.logoani{
+    display: block;
+    width: 100%;
+    display: inline;
+ justify-content: center;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ height: auto;
+ 
+}
+
+.logoimage{
+
+    position:absolute;
+    left: 1%;
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.logoimage img{
+    width: 100%;;
+    height: auto;
+    display: block;
+
+}
+
+.logoani h1{
+    color: white;
+    font-size: 4.5vw;
+    width: 50%;
+    padding: 10px;
+    font-family: "Montserrat Subrayada", sans-serif;
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+    font-weight: 1000;
+    
+}
+
+
+.event{
+    background: linear-gradient(180deg, #0e857dbe 0%, rgba(190.81, 114.96, 114.96, 0) 100% );
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: auto;
+
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.container{
+  
+    padding: 35px 5%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+
+}
+
+.col{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+ .col .contents{
+    padding: 0px 30px;
+    border-left: 2px solid white;
+    display: flex;
+}
+
+.col .contents .box{
+    
+    position: relative;
+   
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.col .contents .box p{
+    font-size: 1.5vw;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+   
+}
+
+h4{
+    font-size: 2vw;
+    color: white;   
+}
+
+h1{
+    font-family: "Montserrat Subrayada", sans-serif;
+}
+
+.col .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top:43px;
+    background-color: white;
+}
+
+
+.yt{
+  display: flex; width: 100%; align-items: center; justify-content: center; }
+
+ .yt iframe{
+    width: 100%;
+    min-height: 400px;
+ }
+ .close{
+    background-color: #0a5e58;
+    width: 20px;
+    height: 50px;
+    position: relative;
+    top: 43px;
+    right: 5px;
+    z-index: 999;
+}
+
+@media only screen and (max-width: 768px) {
+ 
+    .col .contents .box p{
+        font-size: 10px;
+        padding-right: 20px;
+    }
+
+ 
+
+}
+
+@media (max-width : 800px){
+    .hide{
+        display: none;
+    }
+
+    .nav-line{
+        display: none;
+    }
+   .menu{
+    display: block;
+    margin: 0 10px;
+   }
+
+   .logoimage{
+
+    width: 100px;
+   }
+
+   .nav-linecc{
+    display: block;
+}
+
+   .logoani h1{
+    position: relative;
+    bottom: 5px;
+   }
+
+   .logoani{
+    padding-top: 20px;
+   }
+
+    .event .contents .container .col .box h4{
+    font-size: 25px;
+    color: white;
+   }
+
+   .yt iframe{
+    width: 100%;
+    min-height: 90px;
+ }
+
+ h4{
+    font-size: 12px;
+ }
+
+ .col .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top:15px;
+    background-color: white;
+}
+.col .contents{
+    padding: 0px 0px 0px 30px;
+    border-left: 2px solid white;
+    display: flex;
+
+  }  .close{
+        background-color: #0a5e58;
+        width: 20px;
+        height: 30px;
+        position: relative;
+        top: 15px;
+        right: 5px;
+        z-index: 999;
+    }
+
+
+
+}
+
+
+@media(max-width:400px)
+{
+    .sidebar{
+        width: 50%;
+    }
+
+    .col .contents{
+        padding: 0px 0px 0px 30px;
+        border-left: 2px solid white;
+        display: flex;
+    }
+
+    
+}
+
+
+
